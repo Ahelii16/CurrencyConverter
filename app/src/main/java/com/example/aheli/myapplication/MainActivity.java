@@ -16,12 +16,12 @@ public class MainActivity extends AppCompatActivity {
 
         String rupees = rupee.getText().toString();
         Double rupee_double = Double.parseDouble(rupees);
-        Double pounds = rupee_double*80;
+        Double pounds = rupee_double*90.87;
 
         String poundString = String.format("%.2f", pounds);
         Log.i("pound: ", poundString);
 
-        Toast.makeText(this, rupees + "in pounds is: " + poundString, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, rupees + "in GBP is: " + poundString, Toast.LENGTH_LONG).show();
     }
     public void euro(View view){
         EditText rupee = (EditText) findViewById(R.id.rupeeVal);
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         String rupees = rupee.getText().toString();
         Double rupee_double = Double.parseDouble(rupees);
-        Double euro = rupee_double*87.97;
+        Double euro = rupee_double*82.35;
 
         String euroString = String.format("%.2f", euro);
         Log.i("Euro: ", euroString);
